@@ -1,0 +1,19 @@
+package com.kavinschool.corejava.example;
+
+public class Welcome2 {
+
+	public static void main(String[] args) {
+
+		System.out.println("Welcome to Programming");
+		
+		int i = 0;
+		int j = 1;
+		
+		int k = j/i;
+		
+		System.out.println("K=" + k);
+
+		
+	}
+
+}
