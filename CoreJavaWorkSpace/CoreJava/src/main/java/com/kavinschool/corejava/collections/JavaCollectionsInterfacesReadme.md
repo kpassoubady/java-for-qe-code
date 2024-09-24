@@ -2,6 +2,9 @@
 
 ## Java Collection Interfaces
 
+
+Here’s a table summarizing the key interfaces in the Java Collections Framework along with their descriptions:
+
 | **Interface**  | **Description**                                                                                               |
 |----------------|---------------------------------------------------------------------------------------------------------------|
 | `Collection`   | The root interface in the collection hierarchy. It represents a group of objects known as elements.            |
