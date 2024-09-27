@@ -30,12 +30,12 @@ public class PetStoreRestAssuredTest {
      */
     private final static String PET_REST_URI = BASE_URI + "/pet/";
 
-    /**
+    /*
      * The Constant PET_INV_STORE_URI.
      */
     //private final static String PET_INV_STORE_URI = BASE_URI + "/store/inventory";
 
-    /**
+    /*
      * The Constant PET_INV_FIND_STATUS.
      */
     //private final static String PET_INV_FIND_STATUS = BASE_URI + "/pet/findByStatus";
@@ -156,7 +156,7 @@ public class PetStoreRestAssuredTest {
     }
 
     @Test(dependsOnMethods = {"putPetUsingJsonFile"})
-    public void deletePetUsingId() throws IOException {
+    public void deletePetUsingId() {
 
         final String url = PET_REST_URI + RANDOM;
         System.out.println("url to delete:" + url);
@@ -171,8 +171,8 @@ public class PetStoreRestAssuredTest {
                 .statusCode(200);
     }
 
-    //@Test(dependsOnMethods={"putPetUsingJsonFile"})
-    public void patchPetUsingId() throws IOException {
+    @Test(dependsOnMethods = {"putPetUsingJsonFile"})
+    public void patchPetUsingId() {
 
         final String url = PET_REST_URI + RANDOM;
         System.out.println("url to patch:" + url);
