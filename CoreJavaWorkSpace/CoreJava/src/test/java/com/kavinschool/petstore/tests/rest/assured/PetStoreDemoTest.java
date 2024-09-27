@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class PetStoreDemoTest {
 
-    public static final String PET_STORE_URI="https://petstore.swagger.io/v2/pet/100";
+    public static final String PET_STORE_URI="https://petstore.swagger.io/v2/pet/1000";
 
     @Test
     public void  testGetPet() {
@@ -21,9 +21,7 @@ public class PetStoreDemoTest {
             get(PET_STORE_URI).
         then().
             statusCode(200).
-            body("id", equalTo(100)).
-            body("category.name",equalTo("kangs")).
-            body("tags[0].name",equalTo("kangs"));
-
+            body("id", equalTo(1000)).
+            body("name",equalTo("kangs"));
     }
 }

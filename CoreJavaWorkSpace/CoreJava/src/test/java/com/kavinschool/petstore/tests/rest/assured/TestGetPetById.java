@@ -15,6 +15,6 @@ public class TestGetPetById {
                 .get("https://petstore.swagger.io/v2/pet/{petId}")
                 .then()
                 .statusCode(200)
-                .body("name", equalTo("doggie"));
+                .body("name", equalTo("kangs"));
     }
 }

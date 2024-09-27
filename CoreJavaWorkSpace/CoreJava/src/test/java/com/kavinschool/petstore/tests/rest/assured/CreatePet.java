@@ -6,7 +6,16 @@ import io.restassured.response.Response;
 
 public class CreatePet {
     public static void main(String[] args) {
-        String requestBody = "{ \"id\": 1000, \"name\": \"doggie\", \"status\": \"available\" }";
+        String requestBody = """
+                {
+                  "id": 1000,
+                  "category": {
+                    "id": 0,
+                    "name": "string"
+                  },
+                  "name": "kangs",
+                  "status": "available"
+                }""";
 
         Response response = RestAssured
                 .given()
