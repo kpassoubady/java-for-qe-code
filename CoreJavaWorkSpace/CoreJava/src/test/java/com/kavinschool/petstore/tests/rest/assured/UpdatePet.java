@@ -6,7 +6,8 @@ import io.restassured.response.Response;
 
 public class UpdatePet {
     public static void main(String[] args) {
-        String updateRequestBody = "{ \"id\": 10, \"name\": \"doggie updated\", \"status\": \"sold\" }";
+        String updateRequestBody = """
+                { "id": 10, "name": "doggie updated", "status": "sold" }""";
 
         Response response = RestAssured
                 .given()

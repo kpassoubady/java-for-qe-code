@@ -7,7 +7,8 @@ import static org.hamcrest.Matchers.equalTo;
 
 public class ChainRequestsExample {
     public static void main(String[] args) {
-        String requestBody = "{ \"id\": 100, \"name\": \"doggie\", \"status\": \"available\" }";
+        String requestBody = """
+                { "id": 100, "name": "doggie", "status": "available" }""";
 
         // Create a Pet
         RestAssured
