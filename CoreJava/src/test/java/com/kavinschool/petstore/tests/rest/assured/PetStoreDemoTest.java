@@ -3,7 +3,6 @@ package com.kavinschool.petstore.tests.rest.assured;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
-import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.Matchers.equalTo;
 

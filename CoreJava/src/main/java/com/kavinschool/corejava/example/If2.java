@@ -2,7 +2,7 @@ package com.kavinschool.corejava.example;
 
 public class If2 {
 	public static void main(String args[]) {
-		int keith = 5, ken = 15, kavin = 10;
+		int keith = 5, ken = 15;
 		int max = 0;
 
 		// if-else clause

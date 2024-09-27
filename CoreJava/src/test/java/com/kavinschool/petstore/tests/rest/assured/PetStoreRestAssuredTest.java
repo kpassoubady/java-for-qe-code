@@ -33,12 +33,12 @@ public class PetStoreRestAssuredTest {
     /**
      * The Constant PET_INV_STORE_URI.
      */
-    private final static String PET_INV_STORE_URI = BASE_URI + "/store/inventory";
+    //private final static String PET_INV_STORE_URI = BASE_URI + "/store/inventory";
 
     /**
      * The Constant PET_INV_FIND_STATUS.
      */
-    private final static String PET_INV_FIND_STATUS = BASE_URI + "/pet/findByStatus";
+    //private final static String PET_INV_FIND_STATUS = BASE_URI + "/pet/findByStatus";
 
     /**
      * The Constant JSON_POST_FILE.
