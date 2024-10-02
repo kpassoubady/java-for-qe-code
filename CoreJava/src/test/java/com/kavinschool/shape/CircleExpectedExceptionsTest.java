@@ -123,7 +123,7 @@ public class CircleExpectedExceptionsTest {
     /**
      * Test of resetLabel method, of class Circle.
      */
-    @Test(groups = {"non-functional", "Resetter", "ignore"})
+    @Test(groups = {"non-functional", "Re-setter", "ignore"})
     public void testResetLabel() {
         System.out.println("CircleTest resetLabel");
         instance.resetLabel();

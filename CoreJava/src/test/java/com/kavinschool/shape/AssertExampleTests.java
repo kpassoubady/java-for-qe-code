@@ -9,7 +9,7 @@ public class AssertExampleTests {
     @Test
     public void testHardAsserts() {
         Assertion hardAssert = new Assertion();
-        hardAssert.assertEquals("Kangs", "Kangs", "Names are not equal");
+        hardAssert.assertEquals("Kangs", "Dangs", "Names are not equal");
         hardAssert.assertEquals(2, 5, "Numbers are not equal");
     }
 
