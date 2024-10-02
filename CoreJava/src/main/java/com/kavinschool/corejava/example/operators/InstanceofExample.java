@@ -1,4 +1,4 @@
-package com.kavinschool.corejava.example;
+package com.kavinschool.corejava.example.operators;
 
 public class InstanceofExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.kavinschool.corejava.example;
+package com.kavinschool.corejava.example.operators;
 
 // Switch Expression Example
 /*

@@ -1,4 +1,4 @@
-package com.kavinschool.corejava.example;
+package com.kavinschool.corejava.example.operators;
 
 /*
  * Sealed Classes: A sealed class is a class that restricts which other classes can extend it.
