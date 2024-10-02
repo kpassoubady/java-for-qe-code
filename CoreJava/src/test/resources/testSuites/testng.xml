@@ -3,7 +3,7 @@
 <suite name="Default Suite">
     <test thread-count="5" name="CoreJava" parallel="none">
         <classes>
-            <class name="com.kavinschool.petstore.tests.rest.assured.PetStoreDemoTest"/>
+            <class name="com.kavinschool.pet.store.tests.PetStoreDemoTest"/>
         </classes>
     </test> <!-- CoreJava -->
 </suite> <!-- Default Suite -->
