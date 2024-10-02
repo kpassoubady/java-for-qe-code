@@ -1,4 +1,4 @@
-Java Collections and Generics for Quality Engineering (QE)
+# QE Focus: Java Collections and Generics for Quality Engineering
 
 1. Ensuring Type Safety with Generics in Collections
 Objective: Explain how Generics provide compile-time type safety, reducing runtime errors, especially in collections used across large-scale applications.
