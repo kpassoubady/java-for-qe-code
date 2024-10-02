@@ -1,4 +1,4 @@
-package com.kavinschool.collections.collections;
+package com.kavinschool.collections.info;
 
 import java.util.HashMap;
 import java.util.LinkedList;
