@@ -1,4 +1,4 @@
-package com.kavinschool.collections.maps;
+package com.kavinschool.generics;
 
 class TestResult<T> {
     private T result;
