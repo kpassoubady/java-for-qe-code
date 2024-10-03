@@ -5,12 +5,6 @@ import static org.testng.Assert.assertEquals;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-/**
- *
- * @author Kangeyan Passoubady (Kangs) -
- *         <a href="http://www.kavinschool.com/">Kavin School </a>
- *
- */
 public class CubeMultipleDataProviderTest {
 
 	@DataProvider(name = "cube-area")

@@ -1,4 +1,4 @@
-package com.kavinschool.corejava.example;
+package com.kavinschool.basics.example;
 
 public class If2 {
 	public static void main(String args[]) {

@@ -7,12 +7,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-/**
- *
- * @author Kangeyan Passoubady (Kangs) -
- * <a href="http://www.kavinschool.com/">Kavin School </a>
- *
- */
 public class RectangleParameterTest {
 
 	Rectangle rectangle;

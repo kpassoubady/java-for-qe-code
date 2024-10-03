@@ -7,11 +7,6 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-/**
- *
- * @author Kangeyan Passoubady (Kangs) - <a href="http://www.kavinschool.com/">Kavin School </a>
- *
- */
 public class CircleExpectedExceptionsTest {
 
 	CirclePlus instance;
@@ -84,10 +79,19 @@ public class CircleExpectedExceptionsTest {
         assertEquals(expResult, result);
     }
 
+    @Test(groups = {"exception-not-thrown"}, expectedExceptions = ColorRangeException.class )
+    public void testSetColorNameNotThrowsException() throws ColorRangeException {
+        System.out.println("CircleTest setColorName");
+        int expResult = CircleColor;
+        instance.setColorName(CircleColor);
+        int result = instance.getColorName();
+        assertEquals(expResult, result);
+    }
+
     /**
      * Test of resetColor method, of class Circle.
      */
-    @Test(groups = {"non-functional", "Resetter", "ignore"})
+    @Test(groups = {"non-functional", "Re-setter", "ignore"})
     public void testResetColor() {
         System.out.println("CircleTest resetColor");
         instance.resetColor();

@@ -3,12 +3,6 @@ package com.kavinschool.shape;
 import org.testng.annotations.*;
 import static org.testng.Assert.*;
 
-/**
- *
- * @author Kangeyan Passoubady (Kangs) -
- *         <a href="http://www.kavinschool.com/">Kavin School </a>
- *
- */
 public class CubeSingleDataProviderTest {
 
 	@DataProvider(name = "cube-data")
@@ -23,9 +17,6 @@ public class CubeSingleDataProviderTest {
 		};
 	}
 
-	/**
-	 * Test of area method, of class Cube.
-	 */
 	@Test(groups = { "data", "area", "functional" }, dataProvider = "cube-data")
 	public void testArea(int input, double AreaExpected, double VolumeExpected, double PerimeterExpected) {
 		System.out.print("testArea");
@@ -37,9 +28,6 @@ public class CubeSingleDataProviderTest {
 		assertEquals(AreaExpected, result, 0.0);
 	}
 
-	/**
-	 * Test of volume method, of class Cube.
-	 */
 	@Test(groups = { "data", "volume", "functional" }, dataProvider = "cube-data")
 	public void testVolume(int input, double AreaExpected, double VolumeExpected, double PerimeterExpected) {
 		System.out.print("testVolume");
@@ -51,9 +39,6 @@ public class CubeSingleDataProviderTest {
 		assertEquals(VolumeExpected, result, 0.0);
 	}
 
-	/**
-	 * Test of perimeter method, of class Cube.
-	 */
 	@Test(groups = { "data", "perimeter", "functional" }, dataProvider = "cube-data")
 	public void testPerimeter(int input, double AreaExpected, double VolumeExpected, double PerimeterExpected) {
 		System.out.print("testPerimeter");

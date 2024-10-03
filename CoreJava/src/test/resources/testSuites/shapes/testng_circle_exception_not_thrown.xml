@@ -4,13 +4,11 @@
 	<test name="Shape Test">
 		<groups>
 			<run>
-				<include name="perimeter" />
-				<include name="area" />
-				<include name="volume" />
+				<include name="exceptions"/>
 			</run>
 		</groups>
 		<classes>
-			<class name="com.kavinschool.shape.CubeMultipleDataProviderTest" />
+			<class name="com.kavinschool.shape.CircleExpectedExceptionsTest" />
 		</classes>
 	</test>
 </suite> 
