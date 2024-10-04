@@ -6,7 +6,9 @@
 > Write a Java program that declares and initializes variables of different data types such as integers, floats, characters, and strings. Use these variables to perform basic arithmetic operations like addition, subtraction, and multiplication. Additionally, the program should demonstrate how to use escape codes to format the output by including a tab space and a new line in the printed results.
 
 ## Specific Requirements
+>
 > [!TIP]
+>
 > 1. Declare variables of type `int`, `float`, `char`, and `String`.
 > 2. Perform the following arithmetic operations using variables:
 >     - Add two integers.
