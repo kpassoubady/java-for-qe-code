@@ -27,6 +27,9 @@ public class While {
 			}
 			System.out.println("i: " + i);
 			i++;
+//			if (i % 2 == 0) {
+//				continue; // skip even numbers
+//			}
 		}
 		System.out.println("Loop complete.");
 	}
