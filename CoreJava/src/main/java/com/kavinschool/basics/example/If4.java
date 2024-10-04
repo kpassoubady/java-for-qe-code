@@ -12,7 +12,7 @@ public class If4 {
      *
      * @param args an array of {@link java.lang.String} objects
      */
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int keith = 5, ken = 10, kavin = 15;
         int max = 0;
 
