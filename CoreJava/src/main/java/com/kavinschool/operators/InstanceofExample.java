@@ -5,8 +5,8 @@ public class InstanceofExample {
         Object obj = "Hello, Java 21!";  // Assigning a String object to a variable of type Object
 
         // Traditional instanceof check and cast (before Java 16)
-        if (obj instanceof String) {
-            String str = (String) obj;  // Manual casting required
+        if (obj instanceof String str) {
+            // Manual casting required
             System.out.println("Traditional: The length of the string is " + str.length());
         }
 

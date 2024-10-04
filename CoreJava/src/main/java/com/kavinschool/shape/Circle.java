@@ -8,6 +8,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class Circle.
+ *
+ * @author kangs
  */
 public class Circle extends Shape2D {
 
@@ -60,9 +62,9 @@ public class Circle extends Shape2D {
 	}
 
 	/**
-	 * Perimeter.
+	 * {@inheritDoc}
 	 *
-	 * @return Returns perimeter of a circle
+	 * Perimeter.
 	 */
 	@Override
 	public double perimeter() {
@@ -70,6 +72,7 @@ public class Circle extends Shape2D {
 	}
 
 
+	/** {@inheritDoc} */
 	@Override
 	public double area() {
 		return Math.PI * radius * radius;
@@ -78,6 +81,7 @@ public class Circle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#draw()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public void draw() {
 		System.out.println("Name:" + NAME);
@@ -103,12 +107,18 @@ public class Circle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#count()
 	 */
+	/**
+	 * <p>count.</p>
+	 */
 	protected void count() {
 		Shape2D.totalShapes++;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape2D#count2D()
+	 */
+	/**
+	 * <p>count2D.</p>
 	 */
 	protected void count2D() {
 		Circle.total2dShapes++;
@@ -117,12 +127,18 @@ public class Circle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#assignUniqueID()
 	 */
+	/**
+	 * <p>assignUniqueID.</p>
+	 */
 	protected void assignUniqueID() {
 		id = Shape.totalShapes * 10000;
 	}
 
     /* (non-Javadoc)
      * @see com.kavinschool.shape.Shape2D#printMe()
+     */
+    /**
+     * <p>printMe.</p>
      */
     public void printMe() {
     	super.printMe();

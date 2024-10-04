@@ -6,6 +6,11 @@ import java.util.stream.Collectors;
 
 
 
+/**
+ * <p>AdvancedBankTransactionExample class.</p>
+ *
+ * @author kangs
+ */
 public class AdvancedBankTransactionExample {
 
     static class Transaction {
@@ -41,6 +46,11 @@ public class AdvancedBankTransactionExample {
         }
     }
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         // Sample list of transactions
         List<Transaction> transactions = Arrays.asList(

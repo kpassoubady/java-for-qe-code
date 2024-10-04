@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class Cuboid.
+ *
+ * @author kangs
  */
 public class Cuboid extends Shape3D {
 
@@ -53,12 +55,22 @@ public class Cuboid extends Shape3D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#area()
 	 */
+	/**
+	 * <p>area.</p>
+	 *
+	 * @return a double
+	 */
 	public double area() {
 		return 2 * (height * width + width * length + length * height);
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape3D#volume()
+	 */
+	/**
+	 * <p>volume.</p>
+	 *
+	 * @return a double
 	 */
 	public double volume() {
 		return height * width * length;
@@ -67,12 +79,20 @@ public class Cuboid extends Shape3D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#perimeter()
 	 */
+	/**
+	 * <p>perimeter.</p>
+	 *
+	 * @return a double
+	 */
 	public double perimeter() {
 		return 2 * (length + width + height);
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#draw()
+	 */
+	/**
+	 * <p>draw.</p>
 	 */
 	public void draw() {
 		System.out.println("Name:" + NAME);
@@ -86,6 +106,9 @@ public class Cuboid extends Shape3D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#count()
 	 */
+	/**
+	 * <p>count.</p>
+	 */
 	protected void count() {
 		Shape3D.totalShapes++;
 	}
@@ -93,12 +116,18 @@ public class Cuboid extends Shape3D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape3D#count3D()
 	 */
+	/**
+	 * <p>count3D.</p>
+	 */
 	protected void count3D() {
 		Cuboid.total3dShapes++;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#assignUniqueID()
+	 */
+	/**
+	 * <p>assignUniqueID.</p>
 	 */
 	protected void assignUniqueID() {
 		id = Shape.totalShapes * 10000;

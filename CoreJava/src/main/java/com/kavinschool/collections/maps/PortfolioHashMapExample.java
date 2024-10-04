@@ -3,6 +3,11 @@ package com.kavinschool.collections.maps;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * <p>PortfolioHashMapExample class.</p>
+ *
+ * @author kangs
+ */
 public class PortfolioHashMapExample {
     // Inner class for Portfolio
     static class Portfolio {
@@ -16,6 +21,11 @@ public class PortfolioHashMapExample {
     }
 
     // Create a map to store customer portfolios
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         Map<String, Portfolio> customerPortfolios = new HashMap<>();
         customerPortfolios.put("CUST001", new Portfolio("Stocks", 100000));

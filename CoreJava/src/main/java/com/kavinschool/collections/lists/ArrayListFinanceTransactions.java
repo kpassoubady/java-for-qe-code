@@ -3,12 +3,22 @@ package com.kavinschool.collections.lists;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <p>ArrayListFinanceTransactions class.</p>
+ *
+ * @author kangs
+ */
 public class ArrayListFinanceTransactions {
 
     // inner record Transaction
     record Transaction(String type, double amount) {
     }
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("ArrayListFinanceTransactions");
         List<Transaction> transactions = new ArrayList<>();

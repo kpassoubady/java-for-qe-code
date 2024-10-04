@@ -1,6 +1,16 @@
 package com.kavinschool.basics.example;
 
+/**
+ * <p>Switch class.</p>
+ *
+ * @author kangs
+ */
 public class Switch {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		int option = (int) (Math.random() * 6.0);
 		System.out.println("Option:" + option);

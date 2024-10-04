@@ -1,5 +1,10 @@
 package com.kavinschool.vehicle;
 
+/**
+ * <p>HandleBarType class.</p>
+ *
+ * @author kangs
+ */
 public enum HandleBarType {
     DROP,
     FLAT,

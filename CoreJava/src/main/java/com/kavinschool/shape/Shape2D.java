@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class Shape2D.
+ *
+ * @author kangs
  */
 public abstract class Shape2D extends Shape {
 
@@ -26,6 +28,7 @@ public abstract class Shape2D extends Shape {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Shape2D [type=" + type + "]";
@@ -33,6 +36,9 @@ public abstract class Shape2D extends Shape {
     
     /* (non-Javadoc)
      * @see com.kavinschool.shape.Shape#printMe()
+     */
+    /**
+     * <p>printMe.</p>
      */
     public void printMe() {
     	super.printMe();

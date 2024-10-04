@@ -20,6 +20,8 @@ import java.util.Properties;
 
 /**
  * The Class JsonUtil.
+ *
+ * @author kangs
  */
 public class JsonUtil {
 
@@ -28,7 +30,7 @@ public class JsonUtil {
      *
      * @param rd the rd
      * @return the string
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
      */
     public static String readAll(final Reader rd) throws IOException {
         final StringBuilder sb = new StringBuilder();
@@ -44,7 +46,8 @@ public class JsonUtil {
      *
      * @param url the url
      * @return the string
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
+     * @throws java.net.URISyntaxException if any.
      */
     public static String readJsonFromUrl(final String url) throws IOException, URISyntaxException {
         final URI uri = new URI(url);
@@ -61,7 +64,7 @@ public class JsonUtil {
      *
      * @param file the file
      * @return the string
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
      */
     public static String readJsonFromUrl(final FileInputStream file) throws IOException {
         try (InputStream is = file) {
@@ -76,7 +79,7 @@ public class JsonUtil {
      *
      * @param is the is
      * @return the string
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
      */
     public static String readJsonFromUrl(final InputStream is) throws IOException {
         try (is) {
@@ -93,7 +96,8 @@ public class JsonUtil {
      * @param userName   the username
      * @param password   the password
      * @return the string
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
+     * @throws java.net.URISyntaxException if any.
      */
     public static String readJsonFromUrl(final String urlAddress, final String userName, final String password)
             throws IOException, URISyntaxException {
@@ -128,8 +132,8 @@ public class JsonUtil {
     /**
      * Accept ssl certificate.
      *
-     * @throws NoSuchAlgorithmException the no such algorithm exception
-     * @throws KeyManagementException   the key management exception
+     * @throws java.security.NoSuchAlgorithmException the no such algorithm exception
+     * @throws java.security.KeyManagementException   the key management exception
      */
     public static void acceptSslCertificate() throws NoSuchAlgorithmException, KeyManagementException {
         // Create a trust manager that does not validate certificate chains
@@ -176,7 +180,7 @@ public class JsonUtil {
      * @param inputFilePath     the input file path
      * @param inputFileEncoding the input file encoding
      * @param outputFilePath    the output file path
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @throws java.io.IOException Signals that an I/O exception has occurred.
      */
     public static void writeAsUtf8(final String inputFilePath, final String inputFileEncoding,
                                    final String outputFilePath) throws IOException {

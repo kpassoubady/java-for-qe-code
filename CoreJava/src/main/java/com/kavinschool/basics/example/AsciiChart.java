@@ -1,7 +1,17 @@
 package com.kavinschool.basics.example;
 
+/**
+ * <p>AsciiChart class.</p>
+ *
+ * @author kangs
+ */
 public class AsciiChart {
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("=============================");
         System.out.println("       Ascii Chart");

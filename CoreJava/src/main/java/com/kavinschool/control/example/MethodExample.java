@@ -1,5 +1,10 @@
 package com.kavinschool.control.example;
 
+/**
+ * <p>MethodExample class.</p>
+ *
+ * @author kangs
+ */
 public class MethodExample {
 
 // Before: A method doing multiple things

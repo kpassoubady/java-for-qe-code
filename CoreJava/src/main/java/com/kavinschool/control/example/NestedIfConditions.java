@@ -1,5 +1,10 @@
 package com.kavinschool.control.example;
 
+/**
+ * <p>NestedIfConditions class.</p>
+ *
+ * @author kangs
+ */
 public class NestedIfConditions {
 
 // Before: Nested if

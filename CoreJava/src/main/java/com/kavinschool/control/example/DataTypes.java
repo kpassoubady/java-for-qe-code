@@ -1,5 +1,10 @@
 package com.kavinschool.control.example;
 
+/**
+ * <p>DataTypes class.</p>
+ *
+ * @author kangs
+ */
 public class DataTypes {
     long largeNumber = 5000000000L;  // Correct usage for large numbers
     float price = 10.5f;  // Correct usage for float

@@ -1,5 +1,10 @@
 package com.kavinschool.vehicle;
 
+/**
+ * <p>BrakePadType class.</p>
+ *
+ * @author kangs
+ */
 public enum BrakePadType {
     CERAMIC,
     LOW_METALLIC,

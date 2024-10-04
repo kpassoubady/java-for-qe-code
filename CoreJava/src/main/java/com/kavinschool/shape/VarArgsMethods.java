@@ -14,9 +14,19 @@ package com.kavinschool.shape;
 // The variable number of arguments passed to the method can be of different types, as long as they are all compatible with the specified type.
 // The variable number of arguments passed to the method can be of different lengths, as long as they are all compatible with the specified type.
 
+/**
+ * <p>VarArgsMethods class.</p>
+ *
+ * @author kangs
+ */
 public class VarArgsMethods {
     // Example 1: Method with a variable number of arguments
     // This method takes a variable number of arguments of type int and prints their values.
+    /**
+     * <p>printNumbers.</p>
+     *
+     * @param numbers a int
+     */
     public static void printNumbers(int... numbers) {
         for (int number : numbers) {
             System.out.println(number);
@@ -25,6 +35,11 @@ public class VarArgsMethods {
 
     // Example 2: Method with a variable number of arguments
     // This method takes a variable number of arguments of type String and prints their values.
+    /**
+     * <p>printStrings.</p>
+     *
+     * @param strings a {@link java.lang.String} object
+     */
     public static void printStrings(String... strings) {
         for (String string : strings) {
             System.out.println(string);
@@ -33,6 +48,11 @@ public class VarArgsMethods {
 
     // Example 3: Method with a variable number of arguments
     // This method takes a variable number of arguments of type double and prints their values.
+    /**
+     * <p>printDoubles.</p>
+     *
+     * @param doubles a double
+     */
     public static void printDoubles(double... doubles) {
         for (double d : doubles) {
             System.out.println(d);
@@ -42,6 +62,12 @@ public class VarArgsMethods {
     // Example 4: Method with a variable number of arguments and a fixed argument
     // This method takes a variable number of arguments of type int and a fixed argument of type String.
     // The fixed argument is printed before the variable number of arguments.
+    /**
+     * <p>printNumbersWithMessage.</p>
+     *
+     * @param message a {@link java.lang.String} object
+     * @param numbers a int
+     */
     public static void printNumbersWithMessage(String message, int... numbers) {
         System.out.println(message);
         for (int number : numbers) {
@@ -50,6 +76,11 @@ public class VarArgsMethods {
     }
 
     // Main method to test the above methods
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         // Example 1: Calling the method with a variable number of arguments
         // The method can be called with any number of arguments, including zero arguments.

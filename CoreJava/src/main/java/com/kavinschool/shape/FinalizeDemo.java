@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class FinalizeDemo.
+ *
+ * @author kangs
  */
 public class FinalizeDemo {
     

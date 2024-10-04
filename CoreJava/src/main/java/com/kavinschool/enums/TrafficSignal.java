@@ -1,5 +1,10 @@
 package com.kavinschool.enums;
 
+/**
+ * <p>TrafficSignal class.</p>
+ *
+ * @author kangs
+ */
 public enum TrafficSignal {
     RED(40, "STOP") {
         public TrafficSignal nextSignal() {
@@ -15,6 +20,11 @@ public enum TrafficSignal {
         }
     };
 
+    /**
+     * <p>nextSignal.</p>
+     *
+     * @return a {@link com.kavinschool.enums.TrafficSignal} object
+     */
     public abstract TrafficSignal nextSignal();
 
     private final int seconds;
@@ -32,13 +42,18 @@ public enum TrafficSignal {
     String getAction() {
         return action;
     }
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         for (TrafficSignal light : TrafficSignal.values()) {
             System.out.printf("%s: %d seconds, action needed %s, nextSignal is %s\n", light,
                     light.getSeconds(), light.getAction(),light.nextSignal());
         }
 
-        TrafficSignal signal[] = TrafficSignal.values();
+        TrafficSignal[] signal = TrafficSignal.values();
         for (var curSignal:signal) {
             System.out.printf("The index of %s is %s \n", curSignal.name(), curSignal.ordinal());
         }

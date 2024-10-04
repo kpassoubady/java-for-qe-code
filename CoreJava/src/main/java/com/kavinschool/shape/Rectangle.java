@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class Rectangle.
+ *
+ * @author kangs
  */
 public class Rectangle extends Shape2D {
 
@@ -33,6 +35,11 @@ public class Rectangle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#perimeter()
 	 */
+	/**
+	 * <p>perimeter.</p>
+	 *
+	 * @return a double
+	 */
 	public double perimeter() {
 		return 2 * length + 2 * breadth;
 	}
@@ -54,12 +61,20 @@ public class Rectangle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#area()
 	 */
+	/**
+	 * <p>area.</p>
+	 *
+	 * @return a double
+	 */
 	public double area() {
 		return length * breadth;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#draw()
+	 */
+	/**
+	 * <p>draw.</p>
 	 */
 	public void draw() {
 		System.out.println("Name: :" + NAME);
@@ -72,6 +87,9 @@ public class Rectangle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#count()
 	 */
+	/**
+	 * <p>count.</p>
+	 */
 	protected void count() {
 		Shape2D.totalShapes++;
 	}
@@ -79,12 +97,18 @@ public class Rectangle extends Shape2D {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape2D#count2D()
 	 */
+	/**
+	 * <p>count2D.</p>
+	 */
 	protected void count2D() {
 		Rectangle.total2dShapes++;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Shape#assignUniqueID()
+	 */
+	/**
+	 * <p>assignUniqueID.</p>
 	 */
 	protected void assignUniqueID() {
 		id = Shape.totalShapes * 10000;

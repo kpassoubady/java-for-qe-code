@@ -3,7 +3,17 @@ package com.kavinschool.collections.maps;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+/**
+ * <p>InsuranceLinkedHashMap class.</p>
+ *
+ * @author kangs
+ */
 public class InsuranceLinkedHashMap {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		Map<String, String> policyHolders = new LinkedHashMap<>();
 

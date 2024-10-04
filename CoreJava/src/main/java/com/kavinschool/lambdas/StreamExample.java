@@ -4,6 +4,11 @@ import java.util.*;
 
 
 
+/**
+ * <p>StreamExample class.</p>
+ *
+ * @author kangs
+ */
 public class StreamExample {
 
     static class Transaction {
@@ -40,6 +45,11 @@ public class StreamExample {
     }
 
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         List<Transaction> transactions = Arrays.asList(
                 new Transaction("TXN001", 1000, "CREDIT"),

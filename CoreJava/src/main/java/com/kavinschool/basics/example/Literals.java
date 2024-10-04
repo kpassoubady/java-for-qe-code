@@ -1,7 +1,17 @@
 package com.kavinschool.basics.example;
 
+/**
+ * <p>Literals class.</p>
+ *
+ * @author kangs
+ */
 public class Literals {
 	
+	 /**
+	  * <p>main.</p>
+	  *
+	  * @param args an array of {@link java.lang.String} objects
+	  */
 	 public static void main(String args[]) {
 	        byte k = 012;  short s = 0xAB;
 	        int i = 65000; long l = 65000000L;

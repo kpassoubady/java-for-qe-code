@@ -1,6 +1,16 @@
 package com.kavinschool.enums;
 
+/**
+ * <p>VerifyChar class.</p>
+ *
+ * @author kangs
+ */
 public class VerifyChar {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("\u2663, \u2666, \u2665, \u2660 ");
 

@@ -1,7 +1,17 @@
 package com.kavinschool.pattern;
 
+/**
+ * <p>CarInternalBuilderDemo class.</p>
+ *
+ * @author kangs
+ */
 public class CarInternalBuilderDemo {
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         Car car1 = Car.newBuilder().build();
         System.out.println("car1 = " + car1);

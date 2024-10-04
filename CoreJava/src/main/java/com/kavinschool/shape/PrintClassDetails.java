@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class PrintClassDetails.
+ *
+ * @author kangs
  */
 public class PrintClassDetails {
 

@@ -3,6 +3,11 @@ package com.kavinschool.control.example;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * <p>AdhereToSRP class.</p>
+ *
+ * @author kangs
+ */
 public class AdhereToSRP {
 	
 	// Class 1: Invoice (Handles only business logic)
@@ -51,6 +56,12 @@ public class AdhereToSRP {
 
 	
 
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 * @throws java.io.IOException if any.
+	 */
 	public static void main(String[] args) throws IOException {
         Invoice invoice = new Invoice("John Doe", 500.0);
 

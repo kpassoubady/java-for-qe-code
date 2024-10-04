@@ -2,7 +2,17 @@ package com.kavinschool.arrays;
 
 import java.util.Arrays;
 
+/**
+ * <p>Array3d class.</p>
+ *
+ * @author kangs
+ */
 public class Array3d {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         Integer[][][] array3d = new Integer[5][5][5];
         //Store in a 3d array

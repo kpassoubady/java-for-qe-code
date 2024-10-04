@@ -2,7 +2,17 @@ package com.kavinschool.collections.lists;
 
 import java.util.Vector;
 
+/**
+ * <p>InsurancePoliciesVector class.</p>
+ *
+ * @author kangs
+ */
 public class InsurancePoliciesVector {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		Vector<String> policies = new Vector<>();
 

@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class Shape.
+ *
+ * @author kangs
  */
 public abstract  class Shape {
     
@@ -75,6 +77,7 @@ public abstract  class Shape {
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
+	/** {@inheritDoc} */
 	@Override
 	public String toString() {
 		return "Shape [type=" + type + ", id=" + id + "]";

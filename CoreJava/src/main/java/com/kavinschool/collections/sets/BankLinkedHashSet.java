@@ -3,7 +3,17 @@ package com.kavinschool.collections.sets;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+/**
+ * <p>BankLinkedHashSet class.</p>
+ *
+ * @author kangs
+ */
 public class BankLinkedHashSet {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		Set<String> transactions = new LinkedHashSet<>();
 

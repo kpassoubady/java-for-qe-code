@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Interface ShapeRainbowColor.
+ *
+ * @author kangs
  */
 public interface ShapeRainbowColor extends ShapeColor, RainbowColors {
 

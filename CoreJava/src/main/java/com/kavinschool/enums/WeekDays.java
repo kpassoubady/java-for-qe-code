@@ -1,5 +1,10 @@
 package com.kavinschool.enums;
 
+/**
+ * <p>WeekDays class.</p>
+ *
+ * @author kangs
+ */
 public enum WeekDays {
     //Normal order MONDAY=0, TUESDAY=1
     MONDAY,
@@ -8,5 +13,5 @@ public enum WeekDays {
     THURSDAY,
     FRIDAY,
     SATURDAY,
-    SUNDAY;
+    SUNDAY
 }

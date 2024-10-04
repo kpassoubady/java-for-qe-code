@@ -220,7 +220,7 @@ public class EmailService {
 
 public class ReportEmailer {
     private ReportGenerator reportGenerator;
-    private EmailService emailService;
+    private final EmailService emailService;
 
     public ReportEmailer(ReportGenerator reportGenerator, EmailService emailService) {
         this.reportGenerator = reportGenerator;

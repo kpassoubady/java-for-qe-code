@@ -10,7 +10,17 @@ import java.util.Map;
 // 4. It is not synchronized.
 // 5. It is not thread-safe.
 
+/**
+ * <p>LinkedHashMapExample class.</p>
+ *
+ * @author kangs
+ */
 public class LinkedHashMapExample {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         Map<String, Integer> shoppingCart = new LinkedHashMap<String, Integer>();
         shoppingCart.put("PROD123", 2);  // 2 quantities of PROD123

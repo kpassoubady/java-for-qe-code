@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Interface ShapeColor.
+ *
+ * @author kangs
  */
 public interface ShapeColor {
 	
@@ -20,7 +22,7 @@ public interface ShapeColor {
 	 * Sets the color name.
 	 *
 	 * @param ColorName the new color name
-	 * @throws ColorRangeException the color range exception
+	 * @throws com.kavinschool.shape.ColorRangeException the color range exception
 	 */
 	void setColorName(int ColorName) throws ColorRangeException;
 

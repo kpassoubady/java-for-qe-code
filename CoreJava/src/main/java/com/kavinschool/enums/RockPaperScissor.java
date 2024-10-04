@@ -2,8 +2,18 @@ package com.kavinschool.enums;
 
 import java.util.Random;
 
+/**
+ * <p>RockPaperScissor class.</p>
+ *
+ * @author kangs
+ */
 public class RockPaperScissor {
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         int player1 = new Random().nextInt(3);
         int player2 = new Random().nextInt(3);

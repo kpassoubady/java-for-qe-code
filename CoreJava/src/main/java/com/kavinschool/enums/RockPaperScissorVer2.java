@@ -3,6 +3,11 @@ package com.kavinschool.enums;
 import java.util.Random;
 
 
+/**
+ * <p>RockPaperScissorVer2 class.</p>
+ *
+ * @author kangs
+ */
 public class RockPaperScissorVer2 {
 
     private static final String ROCK_SCISSOR = "Rock breaks scissor!!";
@@ -14,6 +19,11 @@ public class RockPaperScissorVer2 {
         System.out.printf("player %d HandSignal %s Wins ", playerNum, playerHandSignal.name().toLowerCase());
     }
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         int player1 = new Random().nextInt(3);
         int player2 = new Random().nextInt(3);

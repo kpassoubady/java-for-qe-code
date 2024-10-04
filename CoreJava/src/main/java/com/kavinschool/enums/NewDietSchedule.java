@@ -1,7 +1,17 @@
 package com.kavinschool.enums;
 
+/**
+ * <p>NewDietSchedule class.</p>
+ *
+ * @author kangs
+ */
 public class NewDietSchedule {
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
 
         int option = (int) (Math.random() * 7.0)+1;

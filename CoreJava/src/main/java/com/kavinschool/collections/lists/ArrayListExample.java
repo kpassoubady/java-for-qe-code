@@ -7,7 +7,17 @@ package com.kavinschool.collections.lists;
 // It is implemented by ArrayList, LinkedList, and Vector classes
 
 import java.util.ArrayList; // import ArrayList class
+/**
+ * <p>ArrayListExample class.</p>
+ *
+ * @author kangs
+ */
 public class ArrayListExample {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         ArrayList<String> arrayList = new ArrayList<String>(); // create an object of ArrayList
         arrayList.add("Java"); // add elements to the arrayList

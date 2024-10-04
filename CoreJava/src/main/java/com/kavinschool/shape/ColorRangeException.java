@@ -8,6 +8,8 @@ import java.io.Serial;
 
 /**
  * The Class ColorRangeException.
+ *
+ * @author kangs
  */
 public class ColorRangeException extends Exception {
 

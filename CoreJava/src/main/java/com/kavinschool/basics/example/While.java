@@ -1,8 +1,15 @@
 package com.kavinschool.basics.example;
 
+/**
+ * <p>While class.</p>
+ *
+ * @author kangs
+ */
 public class While {
 
     /**
+     * <p>main.</p>
+     *
      * @param args the command line arguments
      */
     public static void main(String[] args) {

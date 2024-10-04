@@ -1,6 +1,16 @@
 package com.kavinschool.pattern;
 
+/**
+ * <p>CreateUserDemo class.</p>
+ *
+ * @author kangs
+ */
 public class CreateUserDemo {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         User user1 = new User("Kangs", "Pass");
         System.out.println("user1 = " + user1);

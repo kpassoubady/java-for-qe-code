@@ -2,6 +2,11 @@ package com.kavinschool.pattern;
 
 import java.util.StringJoiner;
 
+/**
+ * <p>Car class.</p>
+ *
+ * @author kangs
+ */
 public class Car {
 
     private final String color;
@@ -24,10 +29,21 @@ public class Car {
         fuelCapacity = builder.fuelCapacity;
     }
 
+    /**
+     * <p>newBuilder.</p>
+     *
+     * @return a {@link com.kavinschool.pattern.Car.Builder} object
+     */
     public static Builder newBuilder() {
         return new Builder();
     }
 
+    /**
+     * <p>newBuilder.</p>
+     *
+     * @param copy a {@link com.kavinschool.pattern.Car} object
+     * @return a {@link com.kavinschool.pattern.Car.Builder} object
+     */
     public static Builder newBuilder(final Car copy) {
         Builder builder = new Builder();
         builder.color = copy.getColor();
@@ -41,34 +57,74 @@ public class Car {
         return builder;
     }
 
+    /**
+     * <p>Getter for the field <code>color</code>.</p>
+     *
+     * @return a {@link java.lang.String} object
+     */
     public String getColor() {
         return color;
     }
 
+    /**
+     * <p>Getter for the field <code>currentSpeed</code>.</p>
+     *
+     * @return a int
+     */
     public int getCurrentSpeed() {
         return currentSpeed;
     }
 
+    /**
+     * <p>Getter for the field <code>year</code>.</p>
+     *
+     * @return a int
+     */
     public int getYear() {
         return year;
     }
 
+    /**
+     * <p>Getter for the field <code>wheels</code>.</p>
+     *
+     * @return a int
+     */
     public int getWheels() {
         return wheels;
     }
 
+    /**
+     * <p>Getter for the field <code>make</code>.</p>
+     *
+     * @return a {@link java.lang.String} object
+     */
     public String getMake() {
         return make;
     }
 
+    /**
+     * <p>Getter for the field <code>model</code>.</p>
+     *
+     * @return a {@link java.lang.String} object
+     */
     public String getModel() {
         return model;
     }
 
+    /**
+     * <p>Getter for the field <code>maximumSpeed</code>.</p>
+     *
+     * @return a int
+     */
     public int getMaximumSpeed() {
         return maximumSpeed;
     }
 
+    /**
+     * <p>Getter for the field <code>fuelCapacity</code>.</p>
+     *
+     * @return a int
+     */
     public int getFuelCapacity() {
         return fuelCapacity;
     }
@@ -187,6 +243,7 @@ public class Car {
         }
     }
 
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         return new StringJoiner(", ", Car.class.getSimpleName() + "[", "]")

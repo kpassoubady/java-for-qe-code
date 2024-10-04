@@ -3,6 +3,11 @@ package com.kavinschool.enums;
 import java.util.Collections;
 import java.util.LinkedList;
 
+/**
+ * <p>CardDeck class.</p>
+ *
+ * @author kangs
+ */
 public class CardDeck {
 
     private static final String LINE_SEP = "=".repeat(50);
@@ -17,6 +22,9 @@ public class CardDeck {
         }
     }
 
+    /**
+     * <p>newDeckPrint.</p>
+     */
     public void newDeckPrint() {
         char oldSymbol = deck.getFirst().getSuit().getSymbol();
         for (Card card : deck) {
@@ -30,6 +38,9 @@ public class CardDeck {
         System.out.println();
     }
 
+    /**
+     * <p>shuffledDeckPrint.</p>
+     */
     public void shuffledDeckPrint() {
         int i =0;
         for (Card card : deck) {
@@ -43,14 +54,27 @@ public class CardDeck {
         System.out.println();
     }
 
+    /**
+     * <p>shuffle.</p>
+     */
     public void shuffle() {
         Collections.shuffle(deck);
     }
 
+    /**
+     * <p>deal.</p>
+     *
+     * @return a {@link com.kavinschool.enums.Card} object
+     */
     public Card deal() {
         return deck.poll();
     }
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         CardDeck deck = new CardDeck();
         System.out.println(LINE_SEP);

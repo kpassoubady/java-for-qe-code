@@ -2,7 +2,17 @@ package com.kavinschool.collections.lists;
 
 import java.util.ArrayList;
 
+/**
+ * <p>BankAccount class.</p>
+ *
+ * @author kangs
+ */
 public class BankAccount {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		ArrayList<String> transactions = new ArrayList<>();
 		transactions.add("Deposit: $500");

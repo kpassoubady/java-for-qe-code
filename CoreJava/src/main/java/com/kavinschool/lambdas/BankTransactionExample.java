@@ -2,6 +2,11 @@ package com.kavinschool.lambdas;
 
 import java.util.*;
 
+/**
+ * <p>BankTransactionExample class.</p>
+ *
+ * @author kangs
+ */
 public class BankTransactionExample {
 
     static class Transaction {
@@ -33,6 +38,11 @@ public class BankTransactionExample {
         }
     }
 
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         // Sample list of transactions
         List<Transaction> transactions = Arrays.asList(

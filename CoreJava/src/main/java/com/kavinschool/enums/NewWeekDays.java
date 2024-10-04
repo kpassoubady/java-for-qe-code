@@ -1,5 +1,10 @@
 package com.kavinschool.enums;
 
+/**
+ * <p>NewWeekDays class.</p>
+ *
+ * @author kangs
+ */
 public enum NewWeekDays {
     //Assign specific value for your constants
     MONDAY(1),
@@ -15,6 +20,11 @@ public enum NewWeekDays {
         day = whichDay;
     }
 
+    /**
+     * <p>Getter for the field <code>day</code>.</p>
+     *
+     * @return a int
+     */
     public int getDay() {
         return day;
     }

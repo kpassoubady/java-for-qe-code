@@ -6,9 +6,14 @@ package com.kavinschool.shape;
 // What are the features of a static class?
 // A static class can have static variables, static methods, and static blocks.
 
+/**
+ * <p>StaticClassExample class.</p>
+ *
+ * @author kangs
+ */
 public class StaticClassExample {
     // Static class can have static variables
-    private static int staticVariable = 10;
+    private static final int staticVariable = 10;
 
     // Static class can have static blocks
     static {
@@ -22,6 +27,11 @@ public class StaticClassExample {
     }
 
     // Static class can have static methods
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("StaticClassExample");
         System.out.println("staticVariable = " + staticVariable);

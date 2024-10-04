@@ -3,7 +3,17 @@ package com.kavinschool.collections.maps;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * <p>BankHashMap class.</p>
+ *
+ * @author kangs
+ */
 public class BankHashMap {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		Map<String, Double> customerAccounts = new HashMap<>();
 

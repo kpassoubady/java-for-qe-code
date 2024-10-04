@@ -15,7 +15,7 @@ Banking Domain: Storing transaction details in a type-safe collection
 ```java
 // A generic class to represent a transaction in a bank
 public class Transaction<T> {
-    private T transactionDetails;
+    private final T transactionDetails;
 
     public Transaction(T transactionDetails) {
         this.transactionDetails = transactionDetails;
@@ -127,7 +127,7 @@ Finance Domain: Handling empty and null values in a stock portfolio.
 import java.util.*;
 
 public class StockPortfolio {
-    private List<String> stocks;
+    private final List<String> stocks;
 
     public StockPortfolio(List<String> stocks) {
         this.stocks = stocks != null ? stocks : new ArrayList<>();
@@ -161,7 +161,7 @@ Technology Domain: Managing user credentials for testing.
 import java.util.*;
 
 public class UserCredentialManager {
-    private Map<String, String> credentials = new HashMap<>();
+    private final Map<String, String> credentials = new HashMap<>();
 
     public void addCredential(String username, String password) {
         credentials.put(username, password);

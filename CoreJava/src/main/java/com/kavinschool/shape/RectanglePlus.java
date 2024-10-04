@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class RectanglePlus.
+ *
+ * @author kangs
  */
 public class RectanglePlus extends Rectangle implements ShapeLabel, ShapeRainbowColor {
 
@@ -45,6 +47,11 @@ public class RectanglePlus extends Rectangle implements ShapeLabel, ShapeRainbow
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeColor#getColorName()
 	 */
+	/**
+	 * <p>getColorName.</p>
+	 *
+	 * @return a int
+	 */
 	public int getColorName() {
 		return Color;
 	}
@@ -52,12 +59,16 @@ public class RectanglePlus extends Rectangle implements ShapeLabel, ShapeRainbow
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeColor#setColorName(int)
 	 */
+	/** {@inheritDoc} */
 	public void setColorName(int ShapeColor) {
 		Color = ShapeColor;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeColor#resetColor()
+	 */
+	/**
+	 * <p>resetColor.</p>
 	 */
 	public void resetColor() {
 		Color = 0;
@@ -66,12 +77,18 @@ public class RectanglePlus extends Rectangle implements ShapeLabel, ShapeRainbow
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeLabel#setShapeLabel(java.lang.String)
 	 */
+	/** {@inheritDoc} */
 	public void setShapeLabel(String ShapeLabel) {
 		Label = ShapeLabel;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeLabel#getShapeLabel()
+	 */
+	/**
+	 * <p>getShapeLabel.</p>
+	 *
+	 * @return a {@link java.lang.String} object
 	 */
 	public String getShapeLabel() {
 		return Label;
@@ -80,12 +97,18 @@ public class RectanglePlus extends Rectangle implements ShapeLabel, ShapeRainbow
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeLabel#resetLabel()
 	 */
+	/**
+	 * <p>resetLabel.</p>
+	 */
 	public void resetLabel() {
 		Label = "";
 	}
 	
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Rectangle#draw()
+	 */
+	/**
+	 * <p>draw.</p>
 	 */
 	public void draw() {
 		super.draw();

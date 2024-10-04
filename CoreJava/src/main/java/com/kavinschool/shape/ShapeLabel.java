@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Interface ShapeLabel.
+ *
+ * @author kangs
  */
 public interface ShapeLabel {
 	

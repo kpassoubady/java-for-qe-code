@@ -14,6 +14,8 @@ import java.lang.annotation.Target;
 
 /**
  * The Interface About.
+ *
+ * @author kangs
  */
 @Documented
 @Target(ElementType.TYPE)

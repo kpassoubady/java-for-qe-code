@@ -1,6 +1,16 @@
 package com.kavinschool.arrays;
 
+/**
+ * <p>MatrixArray class.</p>
+ *
+ * @author kangs
+ */
 public class MatrixArray {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         int[][] WeeksWeather = new int[7][24];
 

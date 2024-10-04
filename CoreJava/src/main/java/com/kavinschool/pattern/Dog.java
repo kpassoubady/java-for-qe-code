@@ -2,6 +2,11 @@ package com.kavinschool.pattern;
 
 import java.util.StringJoiner;
 
+/**
+ * <p>Dog class.</p>
+ *
+ * @author kangs
+ */
 public class Dog {
     private final String name;
     private final int age;
@@ -82,6 +87,7 @@ public class Dog {
         }
     }
 
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         return new StringJoiner(", ", Dog.class.getSimpleName() + "[", "]")

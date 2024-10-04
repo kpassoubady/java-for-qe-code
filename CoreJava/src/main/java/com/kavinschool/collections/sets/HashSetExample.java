@@ -3,7 +3,17 @@ package com.kavinschool.collections.sets;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * <p>HashSetExample class.</p>
+ *
+ * @author kangs
+ */
 public class HashSetExample {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("Hello HashSet");
         Set<String> hashSet = new HashSet<>();

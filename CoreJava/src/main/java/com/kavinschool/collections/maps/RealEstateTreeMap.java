@@ -2,7 +2,17 @@ package com.kavinschool.collections.maps;
 
 import java.util.TreeMap;
 
+/**
+ * <p>RealEstateTreeMap class.</p>
+ *
+ * @author kangs
+ */
 public class RealEstateTreeMap {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("Real Estate TreeMap");
         TreeMap<Integer, String> propertyListings = new TreeMap<>();

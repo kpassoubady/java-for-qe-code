@@ -1,5 +1,10 @@
 package com.kavinschool.control.example;
 
+/**
+ * <p>SwitchExpression class.</p>
+ *
+ * @author kangs
+ */
 public class SwitchExpression {
 //    int result = switch (status) {
 //        case SUCCESS -> 1;

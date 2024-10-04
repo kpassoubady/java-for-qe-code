@@ -8,7 +8,17 @@ import java.util.Set;
 // 2. It allows null elements.
 // 3. It does not allow duplicate elements.
 // 4. It is not synchronized.
+/**
+ * <p>LinkedHashSetExample class.</p>
+ *
+ * @author kangs
+ */
 public class LinkedHashSetExample {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         Set<String> viewedProducts = new LinkedHashSet<>();
         viewedProducts.add("PROD123");

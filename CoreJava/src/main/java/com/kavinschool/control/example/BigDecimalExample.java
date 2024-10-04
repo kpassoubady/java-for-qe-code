@@ -3,7 +3,17 @@ package com.kavinschool.control.example;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
+/**
+ * <p>BigDecimalExample class.</p>
+ *
+ * @author kangs
+ */
 public class BigDecimalExample {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         // Example 1: Creating BigDecimal from String
         BigDecimal price = new BigDecimal("19.99");

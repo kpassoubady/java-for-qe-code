@@ -6,6 +6,8 @@ package com.kavinschool.shape;
 
 /**
  * The Class CirclePlus.
+ *
+ * @author kangs
  */
 public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 
@@ -44,6 +46,11 @@ public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeColor#getColorName()
 	 */
+	/**
+	 * <p>getColorName.</p>
+	 *
+	 * @return a int
+	 */
 	public int getColorName() {
 		return Color;
 	}
@@ -51,6 +58,7 @@ public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeColor#setColorName(int)
 	 */
+	/** {@inheritDoc} */
 	public void setColorName(int ColorName) throws ColorRangeException {
 		Color = ColorName;
 		if (Color < 0 || Color > 255)
@@ -60,6 +68,9 @@ public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeColor#resetColor()
 	 */
+	/**
+	 * <p>resetColor.</p>
+	 */
 	public void resetColor() {
 		Color = 0;
 	}
@@ -67,12 +78,18 @@ public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeLabel#setShapeLabel(java.lang.String)
 	 */
+	/** {@inheritDoc} */
 	public void setShapeLabel(String ShapeLabel) {
 		Label = ShapeLabel;
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeLabel#getShapeLabel()
+	 */
+	/**
+	 * <p>getShapeLabel.</p>
+	 *
+	 * @return a {@link java.lang.String} object
 	 */
 	public String getShapeLabel() {
 		return Label;
@@ -81,12 +98,18 @@ public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.ShapeLabel#resetLabel()
 	 */
+	/**
+	 * <p>resetLabel.</p>
+	 */
 	public void resetLabel() {
 		Label = "";
 	}
 
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Circle#draw()
+	 */
+	/**
+	 * <p>draw.</p>
 	 */
 	public void draw() {
 		super.draw();
@@ -97,6 +120,7 @@ public class CirclePlus extends Circle implements ShapeColor, ShapeLabel {
 	/* (non-Javadoc)
 	 * @see com.kavinschool.shape.Circle#draw(boolean)
 	 */
+	/** {@inheritDoc} */
 	public void draw(boolean deep) {
 		this.draw();
 		if (deep) {

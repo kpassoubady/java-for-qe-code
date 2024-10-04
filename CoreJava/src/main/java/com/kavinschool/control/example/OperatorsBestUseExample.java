@@ -1,6 +1,16 @@
 package com.kavinschool.control.example;
 
+/**
+ * <p>OperatorsBestUseExample class.</p>
+ *
+ * @author kangs
+ */
 public class OperatorsBestUseExample {
+	/**
+	 * <p>main.</p>
+	 *
+	 * @param args an array of {@link java.lang.String} objects
+	 */
 	public static void main(String[] args) {
 		// Correct usage of short-circuiting
 //		if (isUserLoggedIn && isAdmin) {  

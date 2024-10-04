@@ -15,6 +15,7 @@ class Property {
         this.price = price;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         return "Property{id=" + id + ", address='" + address + "', price=" + price + "}";
@@ -35,6 +36,7 @@ class Agent {
     void addProperty(Property property) {
         properties.add(property);
     }
+/** {@inheritDoc} */
 
     @Override
     public String toString() {
@@ -55,12 +57,23 @@ class Client {
 
     void addInterestedProperty(Property property) {
         interestedProperties.add(property);
+    /** {@inheritDoc} */
     }
 
     @Override
     public String toString() {
         return "Client{id=" + id + ", name='" + name + "', interestedProperties=" + interestedProperties + "}";
+    /**
+     * <p>RealEstate class.</p>
+     *
+     * @author kangs
+     */
     }
+/**
+ * <p>main.</p>
+ *
+ * @param args an array of {@link java.lang.String} objects
+ */
 }
 
 public class RealEstate {

@@ -3,7 +3,17 @@ package com.kavinschool.collections.lists;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * <p>ListExample class.</p>
+ *
+ * @author kangs
+ */
 public class ListExample {
+    /**
+     * <p>main.</p>
+     *
+     * @param args an array of {@link java.lang.String} objects
+     */
     public static void main(String[] args) {
         System.out.println("ArrayList Example");
         List<String> list = new ArrayList<>();
