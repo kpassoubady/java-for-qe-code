@@ -3,7 +3,7 @@
 1. Ensuring Type Safety with Generics in Collections
 Objective: Explain how Generics provide compile-time type safety, reducing runtime errors, especially in collections used across large-scale applications.
 
-## Key Concepts
+## Key Concepts of Generics
 
 Benefits of Generics in maintaining type safety.
 How to avoid ClassCastException in collections.
@@ -42,7 +42,7 @@ public class BankingApp {
 2. Best Practices for Testing Collections
 Objective: Discuss best practices for testing collections to ensure reliability and robustness, covering both functional and non-functional aspects.
 
-## Key Concepts
+## Key Concepts of Testing Collections
 
 Verifying collection sizes.
 Asserting contents.
@@ -107,8 +107,6 @@ public class InsuranceTest {
 }
 
 ```
-
-
 
 3. Handling Edge Cases in Collection Manipulations
 Objective: Demonstrate how to handle edge cases such as null values, empty collections, and concurrent modifications.
@@ -225,7 +223,7 @@ public class InterestRates {
 6. Performance Testing with Collections
 Objective: Discuss how to measure and improve performance when working with large collections, such as in trading applications.
 
-## Key Concepts
+## Key Concepts of Performance Testing
 
 Measuring performance using collections.
 Optimizing collection usage in large-scale applications.
@@ -260,7 +258,7 @@ public class StockTradeManager {
 7. Using Collections and Streams for Functional Testing
 Objective: Introduce the use of streams for functional testing, such as filtering, mapping, and reducing test data.
 
-## Key Concepts
+## Key Concepts of Functional Testing with Streams
 
 Filtering and transforming collections using streams.
 Testing collection behaviors with streams.
