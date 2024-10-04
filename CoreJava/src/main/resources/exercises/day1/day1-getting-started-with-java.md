@@ -1,8 +1,9 @@
 # Java Basic Operations Exercise
 
 ## Problem Statement
-
+>
 > [!IMPORTANT]
+>
 > Write a Java program that declares and initializes variables of different data types such as integers, floats, characters, and strings. Use these variables to perform basic arithmetic operations like addition, subtraction, and multiplication. Additionally, the program should demonstrate how to use escape codes to format the output by including a tab space and a new line in the printed results.
 
 ## Specific Requirements
@@ -31,14 +32,18 @@ Escape code example: tab space    and new line
 ```
 
 ## Instructions
+>
+> [!CAUTION]
+>
+> 1. Create variables to hold integer values (e.g., `num1`, `num2`), a floating-point number (`decimalValue`), a character (`initial`), and a message (`String`).
+> 2. Perform the arithmetic operations (addition, subtraction, multiplication).
+> 3. Use `System.out.println` statements to print the results in a well-formatted way using escape codes for tab space (`\t`) and new lines (`\n`).
 
-1. Create variables to hold integer values (e.g., `num1`, `num2`), a floating-point number (`decimalValue`), a character (`initial`), and a message (`String`).
-2. Perform the arithmetic operations (addition, subtraction, multiplication).
-3. Use `System.out.println` statements to print the results in a well-formatted way using escape codes for tab space (`\t`) and new lines (`\n`).
-
+## Starting Code Snippet
+>
 > [!WARNING]
-> Starting Code Snippet (May not compile or work):
-> Modify the code as needed.
+> May not compile or work, modify the code as needed.
+>
 
 ```java
 public class BasicOperations {
