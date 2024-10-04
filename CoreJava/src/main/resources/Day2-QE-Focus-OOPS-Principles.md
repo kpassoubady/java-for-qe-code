@@ -16,7 +16,6 @@ Object-Oriented Programming (OOP) principles like encapsulation, inheritance, po
   - [7. Creating Maintainable Object-Oriented Code](#7-creating-maintainable-object-oriented-code)
     - [Example](#example-3)
 
-
 ## 1. Leveraging Encapsulation for Better Testability and Security
 
 **Encapsulation** involves bundling data (fields) and methods (functions) that operate on the data into a single unit (class). It restricts direct access to some of the object’s components, which improves security and testability.
@@ -189,19 +188,19 @@ This simple Calculator class can easily be unit-tested by verifying the return v
 
 ## 6. OOP Best Practices for Quality Engineers
 
-* Favor Composition Over Inheritance: Use composition (objects containing other objects) to extend functionality, as it often leads to more flexible and testable code than inheritance.
-* Use Interfaces and Abstract Classes: These help in defining contracts and abstracting functionality, making code easier to extend and test.
-* Encapsulate Data: Ensure that data within classes is private and provide controlled access through methods.
-* Follow SOLID Principles: These principles guide OOP design toward systems that are easier to maintain, extend, and test.
+- Favor Composition Over Inheritance: Use composition (objects containing other objects) to extend functionality, as it often leads to more flexible and testable code than inheritance.
+- Use Interfaces and Abstract Classes: These help in defining contracts and abstracting functionality, making code easier to extend and test.
+- Encapsulate Data: Ensure that data within classes is private and provide controlled access through methods.
+- Follow SOLID Principles: These principles guide OOP design toward systems that are easier to maintain, extend, and test.
 
 ## 7. Creating Maintainable Object-Oriented Code
 
 To create maintainable code, focus on:
 
-* Separation of Concerns: Divide functionality across different classes and methods.
-* Single Responsibility Principle (SRP): Ensure each class and method has a single responsibility.
-* Minimize Coupling, Maximize Cohesion: Reduce interdependencies between classes while ensuring that each class focuses on related functionality.
-* Refactor Often: Regularly improve code quality through refactoring while maintaining high test coverage.
+- Separation of Concerns: Divide functionality across different classes and methods.
+- Single Responsibility Principle (SRP): Ensure each class and method has a single responsibility.
+- Minimize Coupling, Maximize Cohesion: Reduce interdependencies between classes while ensuring that each class focuses on related functionality.
+- Refactor Often: Regularly improve code quality through refactoring while maintaining high test coverage.
 
 ### Example
 
