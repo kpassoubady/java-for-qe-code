@@ -2,6 +2,6 @@
 
 Java For QE Course Code base
 
-## Linked In Profile
+## LinkedIn Profile
 
 [Linked Profile Kangs](https://www.linkedin.com/in/kpassoubady/)
