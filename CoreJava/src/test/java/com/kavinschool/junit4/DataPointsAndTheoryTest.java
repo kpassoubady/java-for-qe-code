@@ -10,9 +10,10 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(Theories.class)
 public class DataPointsAndTheoryTest {
+
     // Define DataPoints: an array of integers to be tested
     @DataPoints
-    public static int[] dataPoints() {
+    public static int [] dataPoints() {
         return new int[]{1, 2, 3, 4, 5};
     }
 
