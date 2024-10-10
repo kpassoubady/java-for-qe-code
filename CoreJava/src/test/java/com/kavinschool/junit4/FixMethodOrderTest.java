@@ -6,7 +6,7 @@ import org.junit.runners.MethodSorters;
 
 import static org.junit.Assert.assertTrue;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@FixMethodOrder(MethodSorters.JVM)
 public class FixMethodOrderTest {
 
     @Test
