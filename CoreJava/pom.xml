@@ -32,8 +32,45 @@
 		<log4j.version>1.2.17</log4j.version>
 		<slf4j-log4j12.version>1.7.30</slf4j-log4j12.version>
 		<json-schema-validator.version>2.2.6</json-schema-validator.version>
+		<junit.jupiter.version>5.10.0</junit.jupiter.version>
+		<junit.vintage.version>5.10.0</junit.vintage.version>
+		<junit4.version>4.13.2</junit4.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-params</artifactId>
+			<version>${junit.jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JUnit Vintage Engine to run JUnit 4 tests -->
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>${junit.vintage.version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.hamcrest</groupId>
+					<artifactId>hamcrest-core</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- JUnit 4 dependency -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit4.version}</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
@@ -87,6 +124,7 @@
 			<artifactId>json-schema-validator</artifactId>
 			<version>${rest-assured.version}</version>
 		</dependency>
+
 	</dependencies>
 	<build>
 		<testSourceDirectory>${project.basedir}/src/test/java</testSourceDirectory>

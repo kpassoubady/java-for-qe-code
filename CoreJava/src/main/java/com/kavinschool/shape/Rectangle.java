@@ -23,7 +23,7 @@ public class Rectangle extends Shape2D {
 	 * @param l the l
 	 * @param b the b
 	 */
-	Rectangle(int l, int b) {
+    public Rectangle(int l, int b) {
 		length = l;
 		breadth = b;
 
