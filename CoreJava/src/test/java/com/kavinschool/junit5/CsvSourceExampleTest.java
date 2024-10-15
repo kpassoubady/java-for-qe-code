@@ -12,7 +12,9 @@ class CsvSourceExampleTest {
     @CsvSource({
             "apple, 1",
             "banana, 2",
-            "cherry, 3"
+            "cherry, 3",
+            "date, -1",
+            ", 5"
     })
     void testWithCsvSource(String fruit, int rank) {
         assertNotNull(fruit);

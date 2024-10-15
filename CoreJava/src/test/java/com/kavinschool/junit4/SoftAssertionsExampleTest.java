@@ -14,6 +14,6 @@ public class SoftAssertionsExampleTest {
     public void testSoftAssertions() {
         collector.checkThat("First assertion", 2 + 2, equalTo(5));
         collector.checkThat("Second assertion", "Kangs".length(), equalTo(6));
-        collector.checkThat("Third assertion", "JUnit".toLowerCase(), equalTo("junit"));
+        collector.checkThat("Third assertion", "JUnit".toLowerCase(), equalTo("Junit"));
     }
 }

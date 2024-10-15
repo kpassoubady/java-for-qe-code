@@ -5,17 +5,19 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 class MethodSourceExampleTest {
 
     @ParameterizedTest
     @MethodSource("provideFruits")
     void testWithMethodSource(String fruit) {
-        assertNotNull(fruit);
+        assertNotNull(fruit, "fruit is null");
+        assertFalse(fruit.isEmpty(),"fruit is empty");
+        assertTrue(fruit.length() > 3, "fruit length SHOULD BE GREATER than 3 EXPECTED");
     }
 
     static Stream<String> provideFruits() {
-        return Stream.of("apple", "banana", "cherry");
+        return Stream.of("apple", "banana", "cherry",null,"","fig","gr");
     }
 }

@@ -4,6 +4,8 @@ import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theory;
 import org.junit.experimental.theories.Theories;
 import org.junit.runner.RunWith;
+
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 @RunWith(Theories.class)
@@ -22,9 +24,11 @@ public class DataPointsEvenNumberTest {
         
         // Check if the number is even
         if (number % 2 == 0) {
+            System.out.println("Even number %  = " + number);
             assertTrue(isEven(number));
         } else {
-            assertTrue(!isEven(number));
+            System.out.println("Odd number %  = " + number);
+            assertFalse(isEven(number));
         }
     }
 
