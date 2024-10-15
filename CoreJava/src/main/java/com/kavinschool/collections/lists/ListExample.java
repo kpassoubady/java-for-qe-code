@@ -16,7 +16,7 @@ public class ListExample {
      */
     public static void main(String[] args) {
         System.out.println("ArrayList Example");
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>(); // specific ArrayList to List interface
         list.add("QA Engineer");
         list.add("Automation Architect");
         list.add("Developer");
@@ -25,6 +25,20 @@ public class ListExample {
 
         // Access by index
         System.out.println(list.get(1)); // Output: Automation Architect
+
+        // Remove by index
+        list.remove(1);
+        System.out.println(list); // Output: [QA Engineer, Developer]
+
+        // Remove by object
+        list.remove("Developer");
+        System.out.println(list); // Output: [QA Engineer]
+
+        // Check if the list contains an element
+        System.out.println(list.contains("QA Engineer")); // Output: true
+
+        // Get size of the list
+        System.out.println(list.size()); // Output: 1
 
     }
 }

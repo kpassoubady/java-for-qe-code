@@ -19,9 +19,32 @@ public class HashSetExample {
         Set<String> hashSet = new HashSet<>();
         hashSet.add("QA Engineer");
         hashSet.add("Automation Architect");
-        hashSet.add("QA Engineer"); // Duplicate, will not be added.
+        hashSet.add("QA Engineer"); // Duplicate will not be added.
 
         System.out.println(hashSet); // Output: [QA Engineer, Automation Architect]
+
+        // Check if the set contains an element
+        System.out.println(hashSet.contains("QA Engineer")); // Output: true
+        // Check a non-existing element
+        System.out.println(hashSet.contains("Developer")); // Output: false
+
+        // Remove an element
+        hashSet.remove("Automation Architect");
+        System.out.println(hashSet); // Output: [QA Engineer]
+
+        // Get the size of the set
+        System.out.println(hashSet.size()); // Output: 1
+
+        // Clear the set
+        hashSet.clear();
+        System.out.println(hashSet); // Output: []
+
+        // Check if the set is empty
+        System.out.println(hashSet.isEmpty()); // Output: true
+
+        // Add a new element
+        hashSet.add("Developer");
+        System.out.println(hashSet); // Output: [Developer]
 
     }
 }
