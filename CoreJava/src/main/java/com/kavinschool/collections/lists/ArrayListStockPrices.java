@@ -23,5 +23,6 @@ public class ArrayListStockPrices {
 
         // Retrieve the price at a specific time
         double priceAtNoon = stockPrices.get(1);
+        System.out.println("Price at noon: " + priceAtNoon);
     }
 }

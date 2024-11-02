@@ -12,7 +12,7 @@ public class Tire {
 
     private String manufacturerName;
 
-    private double width;
+    //private double width;
 
     /**
      * <p>Constructor for Tire.</p>
