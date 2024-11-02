@@ -16,30 +16,21 @@ public class RecordPatternMatching {
         Person person = new Person("John", new Address("San Francisco"));
 
         // Pattern matching with record
-        if (person instanceof Person p) { // Pattern matching; no need for explicit casting
-            System.out.println("Person Name: " + p.name());
-            System.out.println("City: " + p.address().city());
-        }
+        // Pattern matching; no need for explicit casting
+        System.out.println("Person Name: " + person.name());
+        System.out.println("City: " + person.address().city());
 
         // Explicit casting example
-        Object obj = "Hello, Java 21!";  // Assigning a String object to a variable of type Object
-        if (obj instanceof String str) {
-            // Manual casting required
-            System.out.println("Traditional: The length of the string is " + str.length());
-        }
+        String obj = "Hello, Java 21!";  // Assigning a String object to a variable of type Object
+        // Manual casting required
+        System.out.println("Traditional: The length of the string is " + obj.length());
 
-        // Another example without if side effects of pattern matching
-        if (obj instanceof String str) {  // Pattern matching; no need for explicit casting
-            System.out.println("Pattern Matching: The length of the string is " + str.length());
-        }
+        // Pattern matching example
+        System.out.println("Pattern Matching: The length of the string is " + obj.length());
 
         // Another example with Dog class and instanceof pattern matching
-        Animal animal = new Dog("Buddy");
-        if (animal instanceof Dog dog) {
-            System.out.println("This is a dog named " + dog.getName());
-        } else if (animal instanceof Cat cat) {
-            System.out.println("This is a cat named " + cat.getName());
-        }
+        Dog dog = new Dog("Buddy");
+        System.out.println("This is a dog named " + dog.getName());
 
     }
 }

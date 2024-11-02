@@ -21,14 +21,31 @@ public class SealedClassExample {
 
     // Method that uses pattern matching to describe different shapes
     // This eliminates the need for explicit type casting when matching the specific subclass of Shape.
-    public static String describeShape(Shape shape) {
-        return switch (shape) {
-            case Circle c -> "Circle with radius " + c.radius();
-            case Rectangle r -> "Rectangle with width " + r.width() + " and height " + r.height();
-            case Square s -> "Square with side length " + s.sideLength();
-            default -> throw new IllegalStateException("Unexpected shape: " + shape);
-        };
+    // Below code uses pattern matching to describe different shapes, works with JDK 21 and above
+//    public static String describeShape(Shape shape) {
+//        return switch (shape) {
+//            case Circle c -> "Circle with radius " + c.radius();
+//            case Rectangle r -> "Rectangle with width " + r.width() + " and height " + r.height();
+//            case Square s -> "Square with side length " + s.sideLength();
+//            default -> throw new IllegalStateException("Unexpected shape: " + shape);
+//        };
+//    }
+
+    // Method that uses pattern matching to describe different shapes
+    // This eliminates the need for explicit type casting when matching the specific subclass of Shape.
+    // Below code uses pattern matching to describe different shapes, works with JDK 17 and above
+    public static String describeShape(final Shape shape) {
+        if (shape instanceof Circle c) {
+            return "Circle with radius " + c.radius();
+        } else if (shape instanceof Rectangle r) {
+            return "Rectangle with width " + r.width() + " and height " + r.height();
+        } else if (shape instanceof Square s) {
+            return "Square with side length " + s.sideLength();
+        } else {
+            throw new IllegalStateException("Unexpected shape: " + shape);
+        }
     }
+
 }
 
 // Sealed class hierarchy for different
