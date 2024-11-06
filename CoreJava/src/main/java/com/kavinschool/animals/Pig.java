@@ -1,4 +1,4 @@
-package com.kavinschool.pigs;
+package com.kavinschool.animals;
             // subclass extends superclass
 public class Pig extends Mammal {
     private String name;

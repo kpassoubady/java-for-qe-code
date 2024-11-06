@@ -1,4 +1,4 @@
-package com.kavinschool.pigs;
+package com.kavinschool.animals;
 
 public abstract class Mammal extends WarmBlooded{
     private boolean isMammal = true;

@@ -1,4 +1,4 @@
-package com.kavinschool.pigs;
+package com.kavinschool.animals;
 
 public class DomesticAnimals {
     public static void main(String[] args) {
