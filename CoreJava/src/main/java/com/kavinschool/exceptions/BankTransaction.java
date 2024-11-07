@@ -38,7 +38,5 @@ public class BankTransaction {
 		} catch (TransactionFailedException e) {
 			e.printStackTrace();
 		}
-
 	}
-
 }

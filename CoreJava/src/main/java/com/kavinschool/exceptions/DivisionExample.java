@@ -14,16 +14,18 @@ public class DivisionExample {
 		try {
 			int result = example.divide(10, 2);
 			System.out.println("Result: " + result);
-		} catch (ArithmeticException e) {
-			System.out.println("Error: " + e.getMessage());
+		} catch (ArithmeticException exception) {
+			System.out.println("Error: " + exception.getMessage());
 		}
 
 		// Division by zero
 		try {
 			int result = example.divide(10, 0); // This will throw ArithmeticException
 			System.out.println("Result: " + result);
-		} catch (ArithmeticException e) {
-			System.out.println("Error: Division by zero is not allowed.");
+		} catch (ArithmeticException exception) {
+			System.out.println("Java Error Message: " + exception.getMessage());
+			System.out.println("Error 2: Division by zero is not allowed.");
+			exception.printStackTrace();
 		}
 	}
 }

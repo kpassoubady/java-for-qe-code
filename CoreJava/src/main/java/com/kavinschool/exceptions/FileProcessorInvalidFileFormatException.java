@@ -9,31 +9,28 @@ import java.io.Serial;
  */
 public class FileProcessorInvalidFileFormatException {
 
-	private static class InvalidFileFormatException extends Exception {
-		@Serial
-		private static final long serialVersionUID = 1L;
+    private static class InvalidFileFormatException extends Exception {
+        public InvalidFileFormatException(String message) {
+            super(message);
+        }
+    }
 
-		public InvalidFileFormatException(String message) {
-			super(message);
-		}
-	}
+    private static class FileProcessor {
+        public void processFile(String file) throws InvalidFileFormatException {
+            if (!file.endsWith(".txt")) {
+                throw new InvalidFileFormatException("Invalid file format. Only .txt files are supported.");
+            }
+            System.out.println("Processing file: " + file);
+        }
+    }
 
-	private static class FileProcessor {
-		public void processFile(String file) throws InvalidFileFormatException {
-			if (!file.endsWith(".txt")) {
-				throw new InvalidFileFormatException("Invalid file format. Only .txt files are supported.");
-			}
-			System.out.println("Processing file: " + file);
-		}
-	}
-
-	public static void main(String[] args) {
-		FileProcessor processor = new FileProcessor();
-		try {
-			processor.processFile("document.pdf");
-		} catch (InvalidFileFormatException e) {
-			System.out.println("Error: " + e.getMessage());
-		}
-	}
+    public static void main(String[] args) {
+        FileProcessor processor = new FileProcessor();
+        try {
+            processor.processFile("document.txt");
+        } catch (InvalidFileFormatException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
 
 }

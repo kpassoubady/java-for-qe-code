@@ -17,7 +17,7 @@ public class FinancialSystemException {
 	public static void main(String[] args) {
 		FinancialSystem financialSystem = new FinancialSystem();
 		try {
-			financialSystem.processRecord(null);
+			financialSystem.processRecord("Kangs,123,95678");
 		} catch (NullPointerException e) {
 			System.out.println("Error: " + e.getMessage());
 		}

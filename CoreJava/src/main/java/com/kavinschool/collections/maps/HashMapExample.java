@@ -42,6 +42,7 @@ public class HashMapExample {
         // Add a few more elements
         hashMap.put("Test4", 55);
         hashMap.put("Test5", 65);
+
         System.out.println(hashMap); // Output: {Test1=85, Test3=75, Test4=55, Test5=65}
 
         // Get all keys
@@ -49,5 +50,8 @@ public class HashMapExample {
 
         // Get all values
         System.out.println(hashMap.values()); // Output: [85, 75, 55, 65]
+
+        hashMap.put("Test5", 85); // replace existing key with a different value
+        System.out.println(hashMap); // Output: {Test1=85, Test3=75, Test4=55, Test5=85}
     }
 }

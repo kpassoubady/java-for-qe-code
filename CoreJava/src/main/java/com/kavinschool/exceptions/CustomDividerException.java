@@ -4,15 +4,11 @@ import java.io.Serial;
 
 //Custom Exception Class
 class DivisionByZeroException extends Exception {
-	// Serial
-	@Serial
-	private static final long serialVersionUID = 1L;
-
-	// Constructor
 	public DivisionByZeroException(String message) {
 		super(message);
 	}
 }
+
 
 //Class to perform division
 public class CustomDividerException {
@@ -31,15 +27,15 @@ public class CustomDividerException {
 		// Division example 1 (successful)
 		try {
 			System.out.println("Result: " + divider.divide(10, 2));
-		} catch (DivisionByZeroException e) {
-			System.out.println(e.getMessage());
+		} catch (DivisionByZeroException exception) {
+			System.out.println(exception.getMessage());
 		}
 
 		// Division example 2 (division by zero)
 		try {
 			System.out.println("Result: " + divider.divide(10, 0));
-		} catch (DivisionByZeroException e) {
-			System.out.println(e.getMessage()); // Custom error message
+		} catch (DivisionByZeroException exception) {
+			System.out.println(exception.getMessage()); // Custom error message
 		}
 	}
 }

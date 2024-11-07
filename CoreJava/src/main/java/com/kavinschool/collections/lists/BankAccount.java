@@ -22,5 +22,6 @@ public class BankAccount {
 			System.out.println(transaction);
 		}
 		System.out.println("First transaction: " + transactions.get(0));
+		System.out.println("Second transaction: " + transactions.get(transactions.size() - 1));
 	}
 }

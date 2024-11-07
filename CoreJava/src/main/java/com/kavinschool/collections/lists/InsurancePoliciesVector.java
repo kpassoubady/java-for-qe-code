@@ -26,5 +26,9 @@ public class InsurancePoliciesVector {
 
 		policies.remove(1);
 		System.out.println("Remaining policies: " + policies);
+		System.out.println("First policy: " + policies.firstElement());
+		System.out.println("policies.size() = " + policies.size());
+		System.out.println("policies.capacity() = " + policies.capacity());
+
 	}
 }

@@ -11,8 +11,7 @@ import java.util.List;
 public class ArrayListFinanceTransactions {
 
     // inner record Transaction
-    record Transaction(String type, double amount) {
-    }
+    record Transaction(String type, double amount) { }
 
     /**
      * <p>main.</p>

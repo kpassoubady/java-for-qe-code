@@ -22,5 +22,9 @@ public class GenericsDemoBox {
         Box<String> stringBox = new Box<>();
         stringBox.setItem("Hello World");
         System.out.println("String Value: " + stringBox.getItem());
+
+        Box<Double> doubleBox = new Box<>();
+        doubleBox.setItem(10.5);
+        System.out.println("Double Value: " + doubleBox.getItem());
     }
 }   // End of GenericsDemo

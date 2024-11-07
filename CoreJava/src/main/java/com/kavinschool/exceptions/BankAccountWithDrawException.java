@@ -24,7 +24,7 @@ public class BankAccountWithDrawException {
 	public static void main(String[] args) {
 		BankAccount account = new BankAccount(500);
 		try {
-			account.withdraw(600);
+			account.withdraw(400);
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
 		}

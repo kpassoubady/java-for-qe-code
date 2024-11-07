@@ -19,7 +19,7 @@ public class StudentSystemFinally {
 	public static void main(String[] args) {
 		StudentSystem studentSystem = new StudentSystem();
 		try {
-			System.out.println(studentSystem.findStudent("123"));
+			System.out.println(studentSystem.findStudent("12345"));
 		} catch (Exception e) {
 			System.out.println("Error: " + e.getMessage());
 		} finally {
