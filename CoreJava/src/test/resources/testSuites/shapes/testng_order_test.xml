@@ -3,8 +3,7 @@
 <suite name="OrderSuite" parallel="none" preserve-order="true">
   <test name="OrderTest">
     <classes>
-      <class name="com.kavinschool.shape.OrderTest"/>
-      <class name="com.kavinschool.testng.examples.FirstTest"></class>
+      <class name="com.kavinschool.testng.examples.MyOrderTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
