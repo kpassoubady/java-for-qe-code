@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ShapeSuite" parallel="none">
+	<test name="ShapeTest">
+<!--		<groups>-->
+<!--			<run>-->
+<!--				<exclude name="apple" />-->
+<!--				<include name="smoke" />-->
+<!--			</run>-->
+<!--		</groups>-->
+		<classes>
+			<class name="com.kavinschool.testng.examples.MyOrderTest" />
+			<class name="com.kavinschool.testng.examples.FirstTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -8,29 +8,29 @@ import static org.testng.Assert.*;
 
 public class MyOrderTest {
 
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void setUpBrowser() {
         System.out.println("-".repeat(50));
         System.out.println("@BeforeMethod MyOrderTest.setUpBrowser");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownBrowser() {
         System.out.println("@AfterMethod MyOrderTest.tearDownBrowser");
         System.out.println("-".repeat(50));
     }
 
-    @Test
+    @Test(groups = {"smoke", "apple"})
     public void testApple() {
         System.out.println("@Test MyOrderTest.testApple");
     }
 
-    @Test
+    @Test(groups = {"smoke", "banana"})
     public void testBanana() {
         System.out.println("@Test MyOrderTest.testBanana");
     }
 
-    @Test
+    @Test(groups = {"smoke", "cherry"})
     public void testCherry() {
         System.out.println("@Test MyOrderTest.testCherry");
     }

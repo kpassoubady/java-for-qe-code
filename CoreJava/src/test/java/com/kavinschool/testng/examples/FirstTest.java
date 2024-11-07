@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class FirstTest {
 
-    @Test(priority = 1)
+    @Test(priority = 1, enabled = false)
     public void testFirst() {
         System.out.println("FirstTest.testFirst");
         Assert.assertTrue(5 > 10, "5 is not greater than 10");
