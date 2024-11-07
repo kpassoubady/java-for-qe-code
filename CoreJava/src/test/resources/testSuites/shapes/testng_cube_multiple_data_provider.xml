@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="5" verbose="1" name="ShapeSuite" annotations="JDK"  parallel="none">
+<suite thread-count="6" verbose="1" name="ShapeSuite" annotations="JDK"  parallel="false">
 	<test name="Shape Test">
 		<groups>
 			<run>
