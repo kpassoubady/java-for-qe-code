@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >
-<suite name="OrderSuite" parallel="none">
+<suite name="OrderSuite" parallel="none" preserve-order="true">
   <test name="OrderTest">
     <classes>
       <class name="com.kavinschool.shape.OrderTest"/>
+      <class name="com.kavinschool.testng.examples.FirstTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

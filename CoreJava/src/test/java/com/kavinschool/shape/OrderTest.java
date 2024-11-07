@@ -70,12 +70,18 @@ public class OrderTest {
     @DataProvider
     public Object[][] dp() {
         System.out.println("OrderTest @DataProvider dp");
-        return new Object[][]{new Object[]{1, "a"}, new Object[]{2, "b"},};
+        return new Object[][]{
+                new Object[]{1, "apple"},
+                new Object[]{2, "banana"},
+                new Object[]{3, "cherry"},
+                new Object[]{4, "date"},
+                new Object[]{5, "eggplant"},
+        };
     }
 
     @Test(dataProvider = "dp")
-    public void testF(Integer n, String s) {
-        System.out.println("OrderTest @Test testF value n=" + n + ", s=" + s);
+    public void testF(Integer serialNumber, String fruitName) {
+        System.out.println("OrderTest @Test testF value serialNumber=" + serialNumber + ", fruitName=" + fruitName);
     }
 
 }

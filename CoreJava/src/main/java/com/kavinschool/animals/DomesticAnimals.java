@@ -44,6 +44,22 @@ public class DomesticAnimals {
         kavinPig.display();
         System.out.println("!".repeat(50));
 
+        Dog bullDog = new Dog();
+        bullDog.setName("Tommy");
+        bullDog.setBreed("Bull Dog");
+        bullDog.setAge(3);
+        System.out.println("bullDog = " + bullDog);
+
+        Dog germanShepherd = new Dog("German Shepherd");
+        germanShepherd.setAge(4);
+        System.out.println("germanShepherd = " + germanShepherd);
+
+        Dog goldenRetriever = new Dog("Golden Retriever", "Golden");
+        goldenRetriever.setAge(5);
+        System.out.println("goldenRetriever = " + goldenRetriever);
+
+        Dog labrador = new Dog(100,"Labrador", "Black", 6);
+        System.out.println("labrador = " + labrador);
 
     }
 }

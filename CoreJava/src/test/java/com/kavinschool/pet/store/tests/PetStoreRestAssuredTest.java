@@ -76,8 +76,11 @@ public class PetStoreRestAssuredTest {
         System.out.println("Converted JsonText:" + jsonText);
 
         RestAssured.defaultParser = JSON;
-        RestAssured.given()
-                .header(API_KEY, API_VAL).accept(ContentType.JSON).contentType(ContentType.JSON)
+        RestAssured
+                .given()
+                .header(API_KEY, API_VAL)
+                .accept(ContentType.JSON)
+                .contentType(ContentType.JSON)
                 .body(jsonText)
                 .when()
                 .post(PET_REST_URI)
@@ -90,20 +93,21 @@ public class PetStoreRestAssuredTest {
     }
 
     /**
-     * Pet store get find by status test.
+     * Pet store get to find by status test.
      */
     @Test(dependsOnMethods = {"postNewPetUsingJsonFile"})
     public void petStoreHeaderGetFindByIdTest() {
         final String url = PET_REST_URI + RANDOM;
         System.out.println("url:" + url);
         RestAssured.defaultParser = JSON;
-        RestAssured.given()
-                .header(API_KEY, API_VAL)
-                .header("accept", "application/json")
-                .header("content-type", "application/json")
-                .get(url)
+        RestAssured
+                .given()
+                    .header(API_KEY, API_VAL)
+                    .header("accept", "application/json")
+                    .header("content-type", "application/json")
+                    .get(url)
                 .then()
-                .statusCode(200);
+                    .statusCode(200);
     }
 
     @Test(dependsOnMethods = {"postNewPetUsingJsonFile"})
@@ -111,7 +115,9 @@ public class PetStoreRestAssuredTest {
         final String url = PET_REST_URI + RANDOM;
         System.out.println("url:" + url);
         RestAssured.defaultParser = JSON;
-        RestAssured.given().header(API_KEY, API_VAL)
+        RestAssured
+                .given()
+                .header(API_KEY, API_VAL)
                 .accept("application/json")
                 .contentType("application/json")
                 .get(url)
@@ -164,11 +170,13 @@ public class PetStoreRestAssuredTest {
         RestAssured.defaultParser = JSON;
         RestAssured
                 .given()
-                .header(API_KEY, API_VAL).accept(ContentType.JSON).contentType(ContentType.JSON)
+                    .header(API_KEY, API_VAL)
+                    .accept(ContentType.JSON)
+                    .contentType(ContentType.JSON)
                 .when()
-                .delete(url)
+                    .delete(url)
                 .then()
-                .statusCode(200);
+                    .statusCode(200);
     }
 
     @Test(dependsOnMethods = {"putPetUsingJsonFile"})
@@ -180,11 +188,13 @@ public class PetStoreRestAssuredTest {
         RestAssured.defaultParser = JSON;
         RestAssured
                 .given()
-                .header(API_KEY, API_VAL).accept(ContentType.JSON).contentType(ContentType.JSON)
+                    .header(API_KEY, API_VAL)
+                    .accept(ContentType.JSON)
+                    .contentType(ContentType.JSON)
                 .when()
-                .patch(url)
+                    .patch(url)
                 .then()
-                .statusCode(405);
+                    .statusCode(405);
     }
 
     /**
