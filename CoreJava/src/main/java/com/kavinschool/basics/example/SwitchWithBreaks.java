@@ -5,7 +5,7 @@ package com.kavinschool.basics.example;
  *
  * @author kangs
  */
-public class Switch {
+public class SwitchWithBreaks {
 	/**
 	 * <p>main.</p>
 	 *

@@ -5,7 +5,7 @@ package com.kavinschool.basics.example;
  *
  * @author kangs
  */
-public class DietSchedule {
+public class SwitchWithoutBreakDietSchedule {
     /**
      * <p>main.</p>
      *

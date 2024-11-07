@@ -1,4 +1,4 @@
-package com.kavinschool.basics.example;
+package com.kavinschool.loops;
 
 /**
  * <p>
